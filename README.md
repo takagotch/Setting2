@@ -211,7 +211,106 @@ vi app/views/amin/staff_members/index.html.erb
 vi app/assets/stylesheets/admin/tables.css.scss
 vi app/views/admin/_header.html.erb
 vi app/assets/stylesheets/admin/layout.css.scss
+vi app/controllers/admin/staff_members_controller.rb
+vi app/controllers/admin/staff_members_controller.rb
+vi app/views/admin/staff_members/new.html.erb
+vi app/views/admin/staff_members/_form.html.erb
+vi app/assets/stylesheets/admin/form.css.scss
+vi app/controllers/admin/staff_members_controller.rb
+vi app/views/admin/staff_members/edit.html.erb
+vi app/views/admin/staff_members/_form_html.erb
+vi app/controllers/admin/staff_members_controller.rb
+vi config/application.rb
+vi app/controllers/staff_members_controller.rb
+vi app/controllers/admin/staff_members_controller.rb
 
+vi app/application.rb
+vi app/controllers/admin/staff_members_controller.rb
+mkdir -p spec/controllers/admin
+vi spec/controllers/admin/staff_members_controller_spec.rb
+vi spec/factories/staff_members.rb
+vi spec/controllers/admin/staff_members_controller_spec.rb
+rails spec/controllers/admin/staff_members_controller_spec.rb
+vi spec/controller/admin/staff_members_controller_spec.rb
+rails spec/controllers/admin/staff_members_controller_spec.rb
+vi app/controllers/concerns/errors_handlers.rb
+vi app/views/errors/bad_request.html.erb
+vi app/controllers/application_controller.rb
+vi app/controllers/admin/staff_members_controller.rb
+
+rails g controller staff/accounts
+vi app/controllers/staff/accounts_controller.rb
+vi app/views/shared/_header.html.erb
+vi app/views/staff/accounts/show.html.erb
+vi app/assets/stylesheets/layout.css.scss
+vi app/assets/stylesheets/staff/tables.css.scss
+vi app/controllers/staff/accounts_controller.rb
+vi app/views/staff/acounts/edit.html.erb
+vi app/views/staff/accounts/_form.html.erb
+cp app/assets/stylesheets/admin/_form.html.scss app/assets/stylesheets/staff
+vi app/controllers/staff/accounts_controller.rb
+mkdir -p spec/controllers/staff
+vi spec/controller/staff/accounts_controller_spec.rb
+rails spec/controllers/staff/accounts_controller_spec.rb
+vi spec/controllers/staff/accounts_controller_spec.rb
+rails spec/controllers/staff/accounts_controller_spec.rb
+vi app/controllers/admin/staff_members_controller.rb
+vi app/controllers/admin/staff_members_controller.rb
+vi app/controllers/admin/staff_members_controller.rb
+vi app/controllers/admin/base.rb
+vi app/controllers/admin/top_controller.rb
+vi app/controllers/admin/sessions_controller.rb
+vi app/controllers/staff/base.rb
+vi app/controllers/staff/top_controller.rb
+vi app/controllers/staff/sessions_controller.rb
+vi app/controllers/staff_members.rb
+vi app/controllers/staff/base.rb
+vi app/controllers/staff/sessions_controller.rb
+vi app/controllers/staff/base.rb
+rails spec/
+vi spec/controllers/admin/staff_members_controller_spec.rb
+vi spec/controllers/staff/accounts_controller_spec.rb
+rails spec/
+mkdir -p spec/support
+vi spec/support/shared_examples_for_admin_controllers.rb
+vi spec/controllers/admin/staff-members_controller.spec.rb
+vi spec/support/shared_examples_for_staff_controller.rb
+vi spec/controllers/staff/accoutns_controller_spec.rb
+rails spec/
+vi spec/controller/staff/top_controller_spec.rb
+vi spec/controller/staff/top_controller_spec.rb
+
+vi Gemfile
+bundle install
+rails g model staff_event
+rm spec/models/staff_event_spec.rb
+vi db/migrate/202008010320_create_staff_events.rb
+rails db:migrate
+vi app/models/staff_member.rb
+vi app/models/staff_event.rb
+vi app/controllers/staff/sessions_controller.rb
+// rails r "puts StaffMember.new.events.class.ancestors"
+vi config/routes.rb
+vi app/views/admin/top/dashboard.html.erb
+curl https://localhost:3000/admin
+vi app/views/admin/staff_members/index.html.erb
+
+rails g controller admin/staff_events
+vi app/controllers/admin/staff_events_controller.rb
+vi app/views/admin/staff_events/index.html.erb
+vi app/views/admin/staff_events/_event.html.erb
+vi app/models/staff_event.rb
+vi db/seeds.rb
+vi db/seeds/development/staff_events.rb
+rails db:reset
+vi Gemfile
+bundle install
+rails g kaminari:config
+rails g kaminari:views default
+vi config/initializers/kaminari_config.rb
+mkdir -p config/locales/views
+vi config/locales/views/paginate.ja.yml
+vi app/controllers/admin/staff_events_controller.rb
 
 ```
 
