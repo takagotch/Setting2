@@ -834,6 +834,7 @@ vi spec/features/customer/account_management_spec.rb
 rails spec/features/customer/account_management_spec.rb
 
 rails g model message
+vi db/migrate/202008020009_create_messages.rb
 
 
 
