@@ -614,7 +614,30 @@ cp app/assets/stylesheets/admin/session.css.scss app/assets/stylesheets/customer
 vi app/assets/stylesheets/customer/sessions.css.scss
 vi app/assets/stylesheets/customer/layout.css.scss
 vi app/assets/stylesheets/customer/_colors.css.scss
-mkdir
+mkdir -p app/services/customer
+cp app/services/admin/authenticator.rb app/services/customer
+vi app/services/customer/authenticator.rb
+curl https://localhost:3000/mypage
+vi app/forms/customer/login_form.rb
+vi app/views/customer/sessions/new.html.erb
+vi app/assets/stylesheets/customer/sessions.css.scss
+vi app/controllers/customer/sessions_controller.rb
+vi app/controllers/customer/session_controller.rb
+vi app/controllers/customer/base.rb
+mkdir -p spec/controllers/customer
+vi spec/controllers/customer/sessions_controller_spec.rb
+rails spec/controllers/customers/session_controller_spec.rb
+vi spec/controllers/customer/sessions_controller_spec.rb
+rails spec/controllers/customers/sessions_controller_spec.rb
+vi config/environments/development.rb
+vi app/controllers/application_controller.rb
+vi app/controlllers/concerns/error_handlers.rb
+rails g model AllowedSources
+vi db/migrate/202008012312_create_allowed_sources.rb
+rails db:migrate
+vi app/models/allowed_source.rb
+vi app/models/allowed_source.rb
+vi spec/models/allowed_sources_spec.rb
 
 
 
