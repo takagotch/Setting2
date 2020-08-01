@@ -311,6 +311,205 @@ vi config/initializers/kaminari_config.rb
 mkdir -p config/locales/views
 vi config/locales/views/paginate.ja.yml
 vi app/controllers/admin/staff_events_controller.rb
+vi app/views/admin/staff_events/index.html.erb
+vi app/views/kaminari/_paginator.html.erb
+vi app/views/kaminari/_first_page.html.erb
+vi app/views/kaminari/_last_page.html.erb
+vi app/views/kaminari/_prev_page.html.erb
+vi app/views/kaminari/_next_page.html.erb
+vi app/assets/stylesheets/admin/pagination.css.scss
+vi Gemfile
+bundle install
+vi app/controllers/admin/staff_events_controller.rb
+vi app/controllers/admin/staff_controller.rb
+vi app/app/controllers/admin/staff_event_controller.rb
+
+vi Gemfile
+bundle install
+vi app/assets/stylesheets/admin/form.css.scss
+vi app/assets/stylesheets/admin/_color.css.scss
+vi app/models/staff_member.rb
+vi app/models/concerns/string_normalizer.rb
+vi app/models/staff_member.rb
+vi app/models/staff_member.rb
+vi app/models/concerns/string_normalizer.rb
+vi app/models/staff_member.rb
+vi app/models/staff_members.rb
+vi app/models/staff_members.rb
+vi spec/models/staff_members.rb
+vi spec/models/staff_member_spec.rb
+vi config/routes.rb
+vi app/views/staff/acconts/show.html.erb
+vi app/assets/stylesheets/tables.css.scss
+rails g controller staff/passwords
+vi app/controllers/staff/passwords.controller.rb
+vi app/forms/change_password_form.rb
+vi app/controllers/staff/password_controller.rb
+vi app/views/staff/passwords/edit.html.erb
+
+vi app/controllers/staff/passwords_controller.rb
+vi app/forms/staff/change_password_form.rb
+vi app/assets/stylesheets/form.css.scss
+vi app/assets/stylesheets/staff/_color.css.scss
+curl https://localhost:3000/password
+
+vi app/views/admin/staff_members/index.html.erb
+mkdir -p app/presenters
+vi app/presenters/model_presenter.rb
+vi app/presenters/staff_members_presenter.rb
+vi app/views/admin/staff_members/index.html.erb
+vi app/presenters/staff_memer_presenter.rb
+vi app/views/staff_members/index.html.erb
+vi app/presenters/model_presenter.rb
+vi app/presenters/staff_member_presenter.rb
+vi app/presenters/staff_member_presenter.rb
+vi app/views/admin/staff_events/_event.html.erb
+mkdir -p app/lib
+app/lib/html_builder.rb
+vi app/presenter/model_presenter.rb
+vi app/presenters/staff_event_presenter.rb
+vi app/views/admin/staff_events/index.html.erb
+rm app/views/admin/staff_events/_event.html.erb
+vi app/views/admin/staff_members/_form.html.erb
+vi app/presenters/form_presenter.rb
+vi app/presenters/staff_member_form_presenter.rb
+vi app/views/admin/staff_members/_form.html.erb
+vi app/assets/stylesheets/form.css.scss
+vi app/presenters/staff_member_form_presenter.rb
+vi app/presenters/form_presenter.rb
+vi app/presenters/staff_member_form_presenter.rb
+vi app/views/admin/staff_member/_form.html.erb
+vi app/presenters/form_presenter.rb
+vi app/presenters/staff_member_form_presenter.rb
+vi app/helpers/application_helper.rb
+vi app/views/admin/staff_members/_form.html.erb
+vi app/views/admin/staff_members/_form.html.erb
+mkdir -p config/locales/models
+vi config/locales/modles/errors.ja.yml
+vi config/locales/modles/staff_member.ja.yml
+vi app/presenters/form_presenter.rb
+vi app/presenters/form_presenter.rb
+vi app/presenters/staff_member_form_presenter.rb
+vi app/assets/stylesheets/admin/form.css.scss
+curl https://localhost:3000/admin/staff_members/23
+vi app/views/staff/passwords/edit.html.erb
+mkdir -p config/locales/models/staff
+vi config/locales/modle/staff/change_password_form.ja.yml
+vi app/assets/stylesheets/staff/form.css.scss
+
+vi app/assets/javascripts/application.js
+vi app/assets/javascripts/application.js
+cp app/assets/javascripts/application.js app/assets/javascripts/admin.js
+cp app/assets/javascripts/application.js app/assets/javascripts/customer.js
+cp app/assets/javascripts/application.js app/assets/staff.js
+rm app/assets/javascripts/application.js
+mkdir -p app/assets/javascripts/admin
+mkdir -p app/assets/javascripts/customer
+mkdir -p app/assets/javascripts/staff
+mkdir -p app/assets/javascripts/shared
+
+vi config/initializers/assets.rb
+vi app/presenters/staff_member_form_presenter.rb
+vi app/assets/javascripts/admin/staff_member_form.js.coffee
+curl
+
+vi Gemfile
+bundle install
+vi app/assets/javascripts/shared/datepicker.js.coffee
+vi app/presenters/form_presenter.rb
+
+rails g model customer
+rails g model address
+rm spec/models/customer_spec.rb
+rm spec/models/address_spec.rb
+vi db/migrate/202008011149_create_customer.rb
+vi db/migrate/202008011149_create_addresses.rb
+rails db:migrate
+vi app/models/customer.rb
+vi app/models/address.rb
+vi app/models/home_addresses.rb
+vi app/models/work_address.rb
+vi db/seeds/development/customers.rb
+vi db/seeds.rb
+rails db:migrate
+vi config/routes.rb
+vi app/controllers/stafff/top_controller.rb
+vi app/views/staff/top/dashboard.html.erb
+vi spec/controllers/staff/top_controller_spec.rb
+rails rspec
+rails g controller staff/customers
+vi app/controllers/staff/customers_controllers
+vi app/controllers/staff/customers_controller.rb
+vi app/presenters/customer_presenter.rb
+vi app/views/staff/customers/index.html.erb
+cp app/assets/stylesheets/admin/pagination.css.scss app/assets/stylesheets/staff
+vi app/controllers/staff/customers_controller.rb
+vi app/presenters/model_presenter.rb
+vi app/presenters/address_presenter.rb
+vi app/views/staff/customers/show.html.erb
+vi app/views/staff/customer_form.rb
+vi app/controllers/staff/customers_controller.rb
+mv app/presenters/staff_member_form_presenter.rb app/presenters/
+vi app/presenters/user_form_presenter.rb
+vi app/presenters/staff_member_form_presenter.rb
+vi app/presenters/customer_form_presenter.rb
+vi app/presenters/address_form_presenter.rb
+vi app/presenters/form_presenter.rb
+vi app/views/staff/customers/new.html.erb
+vi app/views/staff/customers/edit.html.erb
+vi app/views/staff/customers/_form.html.erb
+vi app/views/staff/customers/_customer_fields.html.erb
+vi app/views/customers/_home_address_fields.html.erb
+vi app/views/staff/customers/_work_address_fields.html.erb
+cp app/assets/javascripts/admin/staff_member_form.js.coffee app/assets/javascripts/staff/customer_form.js.coffee
+vi app/assets/javascripts/staff/customer_form.js.coffee
+vi app/assets/javascripts/staff/datetimepicker.js.coffee
+vi app/assets/stylesheets/shared/datepicker.css.scss
+
+vi app/forms/staff/customer_form.rb
+vi app/forms/staff/customer_form.rb
+vi app/controllers/staff/customers_controller.rb
+vi app/controllers/staff/customers_controller.rb
+
+vi spec/support/features_spec_helper.rb
+vi spec/factories/addresses.rb
+vi spec/factories/customers.rb
+mkdir -p spec/features/staff
+spec/features/staff/customer_management_spec.rb
+rails spec/features/staff/customer_management_spec.rb
+rails spec/features/staff/customer_management_spec.rb
+vi spec/features/staff/customer_management_spec.rb
+rails spec/features/staff/customer_management_spec.rb
+vi app/models/customer.rb
+vi app/models/address.rb
+vi app/models/concerns/string_normalizer.rb
+vi app/models/home_address.rb
+vi app/models/home_address.rb
+vi app/models/work_address.rb
+vi config/locales/models/customer.ja.yml
+vi config/locales/models/address.ja.yml
+vi app/forms/staff/customer_form.rb
+vi app/forms/staff/customer_form.rb
+vi app/forms/staff/customer_form.rb
+vi app/forms/staff/customer_form.rb
+vi spec/features/staff/customer_management_spec.rb
+vi app/models/customer.rb
+vi app/forms/staff/customer_form.rb
+vi app/forms/customer_form.rb
+vi app/models/staff_member.rb
+vi app/models/concerns/personal_name_holder.rb
+vi app/models/customer.rb
+vi app/models/staff_member.rb
+vi app/models/administrator.rb
+vi app/models/concerns/email_holder.rb
+vi app/models/customer.rb
+vi app/models/administrator.rb
+vi app/models/concerns/password_holder.rb
+vi app/models/staff_member.rb
+vi app/models/customer.rb
+vi app/forms/staff/customer_form.rb
+vi app/views/staff/customers/_form.html.erb
+
 
 ```
 
