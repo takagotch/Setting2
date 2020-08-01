@@ -751,6 +751,89 @@ curl https://localhost:3000/programs/17
 vi app/controllers/staff/programs_controller.rb
 vi app/forms/staffentries_form.rb
 
+vi config/routes.rb
+vi app/controllers/customer/top_controller.rb
+vi app/views/customer/top/dashboard.html.erb
+rails g controller customer/programs
+vi app/controllers/customer/programs_controller.rb
+vi app/models/program.rb
+vi app/views/customer/programs/index.html.erb
+vi app/views/customer/programs/_program.html.erb
+vi app/views/customer/programs/show.html.erb
+cp app/assets/stylesheets/staff/tables.css.scss app/assets/stylesheets/customer
+cp app/assets/stylesheets/staff/pagination.css.scss app/assets/stylesheets/customer
+cp app/assets/stylesheets/staff/divs_and_spans.css.scss app/assets/stylesheets/customer
+vi config/routes.rb
+vi app/views/customer/programs/show.html.erb
+vi app/presenters/program_presenter.rb
+rails g controller customer/entries
+vi app/controllers/customer/entries_controller.rb
+vi app/controllers/customer/entries_controller.rb
+vi app/services/customer/entry_acceptor.rb
+vi app/controllers/customer/entries_controller.rb
+vi app/services/customer/entry_acceptor.rb
+vi app/services/customer/entry_acceptor.rb
+vi app/app/controllers/entries_controller.rb
+vi app/services/customer/entry_acceptor.rb
+vi app/services/customer/entry_acceptor.rb
+vi app/presenters/program_presenter.rb
+vi app/controllers/customer/entries_controller.rb
+
+vi config/routes.rb
+vi app/views/customer/shared/_header.html.erb
+vi app/assets/stylesheets/customer/layout.css.scss
+rails g controller customer/accounts
+vi app/controllers/customer/accounts_controller.rb
+cp app/views/staff/customers/show.html.erb app/views/customer/accounts/
+vi app/views/customer/accounts/show.html.erb
+cp app/forms/staff/customer_form.rb app/forms/customer/account_form.rb
+vi app/forms/customer/account_form.rb
+vi app/controllers/customer/accounts_controller.rb
+cd app/views
+cp staff/customers/edit.html.erb customer/accounts
+cp staff/customers/customer_fields.html.erb customer/accounts
+cp staff/customers/_form.html.erb customer/accounts
+cp staff/customers/_home.address_fields.html.erb customer/accounts
+cp staff/customers/_phone_fields.html.erb customer/accounts
+cp staff/customers/_work_address_fields.html.erb customer/accounts
+cd ../..
+vi app/views/customer/accounts/edit.html.erb
+vi app/views/accounts/_customer_fields.html.erb
+cd app/assets/javascripts
+cp staff/customer_form.js.coffee customer/account_form.js.coffee
+cd ../../..
+vi app/assets/javascripts/customer/account_form.js.coffee
+cd app/assets/stylesheets/staff/form.css.scss app/assets/stylesheets/customer
+vi app/assets/stylesheets/customer/form.csss.scss
+
+vi config/routes.rb
+vi app/views/customer/accoutns/edit.html.erb
+vi app/forms/customer/accoutn_form.rb
+vi app/controllers/customer/accounts_controller.rb
+vi app/views/customer/accounts/confirm.html.erb
+vi app/presenters/confirming_form_presenter.rb
+vi app/presenters/confirming_user_formpresenter.rb
+vi app/presenters/confirming_customer_form_presenter.rb
+vi app/presenters/confirming_address_form_presenter.rb
+vi app/views/customer/accounts/confirm.html.erb
+vi app/views/customer/accounts/_confirming_form.html.erb
+vi app/views/customer/accounts/_form.html.erb
+vi app/views/customer/accounts/_customer_fields.html.erb
+vi app/views/customer/accoutns/_home_address_fields.html.erb
+vi app/views/customer/accounts/_work_address_fields.html.erb
+vi app/views/customer/accoutns/_confirming_phone_fields.html.erb
+vi app/assets/stylesheets/customer/form.css.scss
+vi app/vies/customer/accounts/confirm.html.erb
+vi app/assets/javascripts/customer/account_form.js.coffee
+vi app/controllers/customer/accounts_controller.rb
+vi app/views/customer/accounts/confirm.html.erb
+vi app/forms/customer/account_form.rb
+vi spec/support/features_spec_helper.rb
+mkdir -p spec/features/customer
+vi spec/features/customer/account_management_spec.rb
+rails spec/features/customer/account_management_spec.rb
+
+rails g model message
 
 
 
