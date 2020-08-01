@@ -569,3 +569,59 @@ vi app/models/customer.rb
 vi app/forms/staff/customer_search_form.rb
 ```
 
+---
+---
+
+```
+vi config/routes.rb
+vi config/environments/development.rb
+vi app/controllers/staff/accounts_controller.rb
+vi app/models/concerns/email_holder.rb
+vi app/models/customer.rb
+vi app/models/address.rb
+vi app/models/concerns/string_normalizer.rb
+vi app/assets/stylesheets/staff/flash.css.scss
+vi app/assets/stylesheets/staff/_colors.css.scss
+vi app/assets/stylesheets/staff/_dimensions.css.scss
+vi app/assets/javascripts/admin/staff_member_form.js.coffee
+vi app/forms/admin/login_form.rb
+vi app/controllers/admin/sessions_controller.rb
+vi app/views/admin/sessions/new.html.erb
+vi app/services/admin/authenticator.rb
+vi app/controllers/admin/sessions_controller.rb
+vi app/presenters/customer_presenter.rb
+vi app/presenters/model_presenter.rb
+vi app/views/staff/customers/index.html.erb
+vi app/lib/html_builder.rb
+vi app/presenters/form_presenter.rb
+vi app/views/admin/staff_members/_form.html.erb
+vi spec/models/staff_member.rb
+vi spec/factories/adminstrator.rb
+vi app/controllers/admin/top_controller_spec.rb
+vi spec/features/staff/phone_management_spec.rb
+
+vi config/routes.rb
+vi app/controllers/customer/base.rb
+rails g controller customer/sessions
+vi app/controllers/customer/sessions_controller.rb
+vi app/controllers/customer/top_controller.rb
+vi app/views/customer/sessions/new.html.erb
+cp -f app/views/admin/shared/_header.html.erb app/views/customer/shared
+vi app/views/customer/shared/_header.html.erb
+vi app/forms/customer/login_form.rb
+cp app/assets/stylesheets/admin/flash.css.scss app/assets/stylesheets/customer
+cp app/assets/stylesheets/admin/session.css.scss app/assets/stylesheets/customer
+vi app/assets/stylesheets/customer/sessions.css.scss
+vi app/assets/stylesheets/customer/layout.css.scss
+vi app/assets/stylesheets/customer/_colors.css.scss
+mkdir
+
+
+
+
+
+
+```
+
+
+
