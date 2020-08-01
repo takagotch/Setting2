@@ -1,6 +1,6 @@
 ### Setting2
 ---
-
+https://bitbucket.org/takagotch/rails-settings1/src/master/
 
 ```sh
 rails new apptky -d postgresql--skip-test-unit
