@@ -20,7 +20,7 @@ bin/sprint stop
 ```
 
 
-```
+```sh
 vi /config/database.yml
 rails db:create
 rails db:create RAILS_ENV=test
@@ -638,11 +638,118 @@ rails db:migrate
 vi app/models/allowed_source.rb
 vi app/models/allowed_source.rb
 vi spec/models/allowed_sources_spec.rb
+rails spec/models/allowed_source_spec.rb
+vi app/models/allowed_source.rb
+vi spec/models/allowed_source_spec.rb
+rails spec/models/allowed_source_spec.rb
+rails spec
+vi spec/rails_helper.rb
+rails spec
+vi app/models/allowed_source.rb
+rails spec/models/allowed_source_spec.rb
+vi app/controllers/staff/base.rb
+vi spec/controllers/staff/top_controller_spec.rb
+rails spec/controllers/staff/top_controller_spec.rb
+curl https://localhost:3000/
+rails r "AllowedSouurce.create(namespace: 'staff', ip_address: '10.0.2.2')"
+vi config/environments/development.rb
+vi config/routes.rb
+vi app/views/admin/top/dashboard.html.erb
+vi app/controllers/admin/allowed_sources_controller.rb
+vi app/presenters/allowed_source_presenter.rb
+vi app/views/admin/allowed_sources/index.html.erb
+vi app/assets/stylesheets/admin/tables.css.scss
+rails r "AllowedSource.create(namespace:'staff' ip_address:'127.0.0.1')"
+rails r "AllowedSource.create(namespace:'staff', ip_address:'192.168.1.*')"
+curl https://localhost:3000/admin/all
+vi app/controllers/admin/allowed_sources_controller.rb
+vi app/views/admin/allowed/sources/index.html.erb
+vi app/views/admin/allowed_sources/_new_allowed_source.html.erb
+vi app/models/allowed_source.rb
+curl https://localhost:3000/admin/all
+vi app/controllers/admin/allowed_sources_controller.rb
+vi app/models/allowed_source.rb
+vi app/views/admin/allowed_sources/index.html.erb
+vi app/models/allowed_source.rb
+vi app/services/admin/allowed_sources_deleter.rb
+vi app/controllers/admin/allowed_sources_controller.rb
+vi spec/controllers/admin/top_controller_spec.rb
 
-
-
-
-
+rails g model program
+rails g model entry
+rm -rf spec/models/program_spec.rb
+rm -rf spec/models/entry_spec.rb
+vi db/migrate/202008012324_create_programs.rb
+vi db/migrate/202008012324_create_entries.rb
+rails db:migrate
+vi app/models/entry.rb
+vi app/models/program.rb
+vi app/models/customer.rb
+vi app/models/staff_member.rb
+vi app/models/staff_member.rb
+vi app/controllers/admin/staff_members_controllers.rb
+vi db/seeds/development/programs.rb
+vi db/seeds/development/entries.rb
+vi db/seeds.rb
+rails db:reset
+vi config/routes.rb
+vi app/views/staff/top/dashboard.html.erb
+vi app/controllers/staff/programs_controller.rb
+vi app/presenters/program_presenter.rb
+vi app/views/staff/programs/index.html.erb
+vi app/views/staff/programs/_program.html.erb
+vi app/assets/stylesheets/staff/table.css.scss
+vi app/controllers/staff/programs_controller.rb
+vi app/views/staff/programs/show.html.erb
+vi app/assets/stylesheets/staff/divs_and_spans.css.scss
+vi spec/rails_helper.rb
+rails spec
+vi spec/support/performance_spec_helper.rb
+spec/factories/programs.rb
+vi spec/features/staff/program_management_spec.rb
+rails -i performance spec/features/staff/program_management_spec.rb
+cat log/performance_spec.log
+vi app/controllers/staff/programs_controller.rb
+rails -i performance spec/features/staff/program_management_spec.rb
+vi app/models/program.rb
+vi app/controllers/staff/programs_controller.rb
+vi app/presenters/program_presenter.rb
+vi app/presenters/program_presenter.rb
+vi app/models/program.rb
+vi app/presenters/program_presenter.rb
+vi app/controllers/staff/programs_controller.rb
+vi spec/features/staff/program_management-spec.rb
+vi app/models/program.rb
+vi app/models/program.rb
+vi app/forms/staff/program_form.rb
+vi app/controllers/staff/program_controller.rb
+vi app/presenters/form_presenter.rb
+vi app/presenters/program_form_presenter.rb
+vi app/views/staff/programs/new.html.erb
+vi app/views/staff/programs/eidt.html.erb
+vi app/views/staff/programs/_form.html.erb
+vi app/assets/stylesheets/staff/form.css.scss
+vi app/controllers/staff/programs_controller.rb
+vi app/forms/staff/program_form.rb
+vi app/models/program.rb
+curl https://localhost:30000/
+vi app/lib/date_string_validator.rb
+vi app/models/program.rb
+vi config/locales/models/program.ja.yml
+vi app/presenters/program_form_presenter.rb
+vi app/assets/stylesheets/staff/form.css.scss
+vi app/controllers/staff/programs_controller.rb
+vi app/views/staff/programs/show.html.erb
+vi app/views/staff/programs/_entries_form.html.erb
+vi app/assets/stylesheets/staff/entries.css.scss
+vi config/routes.rb
+vi app/forms/staff/entries_form.rb
+vi app/views/staff/programs/_entries_form.html.erb
+vi app/views/staff/programs/_entries_form.html.erb
+vi app/assets/javascripts/staff/entries_form.js.coffee
+curl https://localhost:3000/programs/17
+vi app/controllers/staff/programs_controller.rb
+vi app/forms/staffentries_form.rb
 
 ```
 
