@@ -835,6 +835,116 @@ rails spec/features/customer/account_management_spec.rb
 
 rails g model message
 vi db/migrate/202008020009_create_messages.rb
+rails db:migrate
+vi app/models/message.rb
+vi app/models/customer_message.rb
+vi app/models/staff_message.rb
+vi app/models/cusotmer.rb
+vi app/models/message.rb
+vi config/routes.rb
+rails g controller customer/messages
+vi app/controllers/customer/message_controller.rb
+vi app/views/customer/messages/new.html.erb
+vi app/views/customer/messages/_form.html.erb
+vi app/views/customer/shared/_header.html.erb
+vi app/controllers/customer/messages_controller.rb
+vi app/views/customer/messages/confirm.html.erb
+vi app/views/customer/messages/_confirming_form.html.erb
+vi app/presenters/confirming_form_presenter.rb
+vi app/controllers/customer/messages_controller.rb
+vi config/routes.rb
+rails g controller staff/message
+vi app/controllers/staff/messages_controller.rb
+vi app/models/customer_message.rb
+vi app/helpers/staff_helper.rb
+vi app/views/staff/shared/_header.html.erb
+vi config/initializers/assets.rb
+vi app/assets/javascripts/staff/paths.js.coffee.erb
+vi app/assets/javascripts/staff/message.js.coffee
+vi app/controllers/application_controller.rb
+vi app/controllers/concerns/error_handlers.rb
+vi app/controllers/staff/messages_controller.rb
+
+vi config/routes.rb
+vi app/views/staff/top/dashboard.html.erb
+vi app/helpers/staff_helper.rb
+vi app/models/message.rb
+vi app/controller/staff/messages_controller.rb
+vi app/views/staff/messages/index.html.erb
+vi app/presenters/message_presenter.rb
+vi db/seeds.rb
+vi db/seeds/development/messages.rb
+rails db:reset
+curl https://localhost:3000/
+vi app/controllers/staff/messages_controller.rb
+vi app/controllers/staff/messages_controller.rb
+vi app/views/staff/messages/show.html.erb
+vi app/presenters/message_presenter.rb
+vi app/assets/stylesheets/staff/divs_and_spans.css.scss
+curl https://localhost:3000/
+vi app/models/message.rb
+vi app/presenters/message_presenter.rb
+vi app/views/staff/message/show.html.erb
+vi spec/factories/messages.rb
+vi spec/features/staff/message_management_spec.rb
+rails -t performance spec/features/staff/message_management_spec.rb
+cat log/performance_spec.log
+vi app/lib/simple_tree.rb
+vi app/models/message.rb
+vi app/presenters/message_presenter.rb
+rails -t performance spec/features/staff/message_managemetn_spec.rb
+
+vi config/routes.rb
+vi app/views/staff/messages/show.html.erb
+rails g controller staff/replies
+vi app/controllers/staff/replies_controller.rb
+vi app/views/staff/replies/new.html.erb
+vi app/views/staff/replies/_form.html.erb
+vi app/views/staff/replies/_message.html.erb
+curl https://localhost:3000/
+vi app/controllers/staff/replies_controller.rb
+vi app/views/staff/replies/confirm.html.erb
+vi app/views/staff/replies/_confirming_form.html.erb
+vi app/controllers/staff/replies_controller.rb
+vi app/models/message.rb
+rails g model tag
+rm spec/models/tag_spec.rb
+vi db/migrate/202008020023_create_tags.rb
+rails g model message_tag_link
+rm spec/models/message_tag_link_spec.rb
+vi db/migrate/202008020024_create_message_tag_links.rb
+rails db:migrate
+vi app/models/message.rb
+vi app/models/tag.rb
+vi app/models/message_tag_link.rb
+vi app/assets/javascripts/staff.staff.js
+vi app/assets/javascripts/staff/tag-it.js.coffee
+vi app/assets/stylesheets/staff.css
+vi app/views/staff/messages/show.html.erb
+vi config/routes.rb
+vi app/controllers/staff/message_controller.rb
+vi app/models/message.rb
+vi app/views/staff/messages/show.html.erb
+vi app/assets/javascripts/staff/paths.js.coffee.erb
+vi app/assets/javascripts/staff/tag-it.js.coffee
+vi app/assets/javascripts/staff/paths.js.coffee
+vi app/assets/javascripts/staff/tag-it.js.coffee
+vi app/assets/javascripts/staff/message.js.coffee
+vi config/database.yml
+rails db:reset
+rails g migration change_collations
+vi db/migrate/202008020028_change_collations.rb
+rails db:migrate
+vi config/routes.rb
+vi app/controllers/staff/messages_controller.rb
+vi app/views/staff/messages/_tags.html.erb
+vi app/views/staff/messages/index.html.erb
+curl https://localhost:3000/
+vi app/views/staff/messages/_link.html.erb
+vi app/views/messages/index.html.erb
+vi app/views/message/show.html.erb
+vi app/controllers/staff/messages_controller.rb
+vi app/controllers/staff/messages_controller.rb
 
 
 
