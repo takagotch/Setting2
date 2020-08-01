@@ -510,6 +510,62 @@ vi app/models/customer.rb
 vi app/forms/staff/customer_form.rb
 vi app/views/staff/customers/_form.html.erb
 
+vi app/assets/javascripts/staff/customer_form.js.coffee
+vi app/forms/staff/customer_form.rb
+vi app/forms/staff/customer_form.rb
+vi app/forms/staff/customer_form.rb
+rails spec/features/staff/customer_manaement_spec.rb
+vi spec/features/customer_management_spec.rb
+rails spec/features/staff/customer_management_spec.rb
+vi spec/features/staff/customer_management_spec.rb
+rails spec/features/staff/customer_management_spec.rb
+rails g model phone
+rm spec/models/phone_spec.rb
+vi db/migrate/202008011214_create_phones.rb
+rails db:migrate
+vi app/models/phone.rb
+i app/models/concerns/string_normalizer.rb
+vi app/models/customer.rb
+vi app/models/address.rb
+vi db/seeds/development/customers.rb
+vi app/views/staff/customers/show.html.erb
+vi app/presenters/customer_presenter.rb
+vi app/presenters/address_presenter.rb
+vi app/forms/staff/customer_form.rb
+vi app/views/staff/customers/_customer_fields.html.erb
 
+vi app/presenters/form_presenter.rb
+vi app/views/staff/customers/_phone_fields.html.erb
+vi app/forms/staff/customer_form.rb
+vi spec/features/staff/phone_management_spec.rb
+rails spec/features/staff/phone_management_spec.rb
+vi app/forms/staff/customer_form.rb
+vi app/views/staff/customers/_home_address_fields.html.erb
+vi app/forms/staff/customer_form.html
+vi spec/features/staff/phone_management_spec.rb
+rails spec/features/staff/phone_management_spec.rb
+
+rails g migration alter_customers1
+rails g migration alter_addresses1
+vi db/migrate/202008011219_alter_customers1.rb
+vi db/migrate/202008011219_alter_addresses1.rb
+rails db:migrate
+vi app/models/customer.rb
+vrails g migration update_customers1
+vi db/migrate/202008011221_update_customers1.rb
+rails db:migrate
+rails db:rollback
+rails db:migrate
+vi app/forms/staff/customer_search_form.rb
+vi app/controllers/staff/customers_controller.rb
+vi app/views/staff/customers/_search_form.html.erb
+vi app/views/staff/customers/index.html.erb
+vi app/assets/stylesheets/staff/search.css.scss
+vi app/controllers/staff/customer_controller.rb
+vi app/forms/staff/customer_search_form.rb
+vi app/forms/staff/customer_search_form.rb
+vi app/models/customer.rb
+vi app/models/customer.rb
+vi app/forms/staff/customer_search_form.rb
 ```
 
