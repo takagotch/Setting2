@@ -945,20 +945,53 @@ vi app/views/messages/index.html.erb
 vi app/views/message/show.html.erb
 vi app/controllers/staff/messages_controller.rb
 vi app/controllers/staff/messages_controller.rb
-
-
-
-
-
-
-
-
-
-
-
-
-
+rails g model hash_lock
+rm spec/models/hash_lock_spec.rb
+vi db/migrate/202008020038_create_hash_locks.rb
+vi db/seeds.rb
+vi db/seeds/hash_locks.rb
+rails r db/seeds/hash_locks.rb
+vi app/models/hash_lock.rb
+vi app/models/message.rb
+vi app/models/message.rb
 ```
 
+```
+vi app/controllers/admin/base.rb
+vi config/environments/development.rb
+vi app/controllers/admin/programs_controller_spec.rb
+rails spec/controllers/admin/top_controller_spec.rb
+vi app/models/program.rb
+vi app/models/program.rb
+vi app/controllers/staff/programs_controller.rb
+vi config/routes.rb
+vi app/controllers/staff/accounts_controller.rb
+vi app/views/staff/accounts/edit.html.erb
+vi app/views/staff/accounts/confirm.html.erb
+vi app/views/staff/accounts/_confirming_form.html.erb
+vi spec/controllers/staff/accounts_controller_spec.rb 
+vi spec/features/staff/account_management_spec.rb
+vi config/routes.rb
+vi app/views/customer/top/dashboard.htmle.erb
+vi app/controllers/customer/message_controller.rb
+vi app/views/message/index.htmle.erb
+vi config/routes.rb
+vi app/controllers/customer/messages_controller.rb
+vi app/views/customer/messages/index.html.erb
+vi app/views/customer/message/show.html.erb
+vi app/assets/stylesheets/customer/divs_and_spans.css.scss
+vi config/routes.rb
+vi app/controllers/customer/message_controller.rb
+vi app/views/customer/messages/index.html.erb
+vi config/routes.rb
+vi app/views/customer/message/show.html.erb
+rails g controller customer/replies
+vi app/controllers/customer/replies_controller.rb
+vi app/views/customer/replies/new.html.erb
+vi app/views/customer/replies/_form.html.erb
+vi app/views/customer/replies/_message.html.erb
+vi app/views/customer/replies/confirm.html.erb
+vi app/views/customer/replies/_confirming_form.html.erb
 
+```
 
